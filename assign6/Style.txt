@@ -1,0 +1,8 @@
+1. I think one of the things I could do better in terms of style is improve the optimization part of my code. When I made the Profiler for Assign 7 Extension gl_draw_pixel was one of the places were my program was slowed. Optimizing this would allow any graphical application to run a lor smoother, especially if the screen was very big. One of the things I think I did well was trying to use #define whenever I could to define things that needed to be reused. 
+
+2. For gl_clear, it is unnecesary to include so much pverhead because it is being cleared uniformaly. There is no variation when the user wants to clear the screen. While in another application like gl_draw_pixel, one pixel can be one color, while another one is another color. One of the ways we could do clipping without calling a check every time is to calculate the clipping region before hand. We could check if the framebuffer intersects with the box by calculating it, and if it insersects then clip it. 
+
+3. See image
+
+4. One of the ways I could optimize my gl_clear, is by implmenting loop unrolling. This would allow me to process multiple pixels at a time and would make the code for a lot faster. Currently I am only doing one pixel at a time. One of the ways I could try these impacts is by using the Profiler I built for my assignment 7 extension. It would allow me to see where execution time was cut, and if what I implmented worked. 
+

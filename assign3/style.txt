@@ -1,0 +1,7 @@
+1. I think one of the things that I am proud of is the fact that when I saw that a lot of code was repeating i decided to make a helper function to just do that code. One of the things I can improve upon is that I could write more insightful comments next time and comment while I code. 
+
+2. Yes, for the padding we had to do this multiple times and I chose to unify it in append_formatted, a function I made to deal with the formatting. I thought it was worth unifying simply because of many times in printf it would need to be called. The downside is that this might not be optimal and could slow the program down.
+
+3. I think printf is does not need to be optimitzed because it used mainlty to debug and write messages at the end of code. Code can function completely fine without printing anything. I think one of the bottlenecks could be the latency that could occur with UART. Printf sends a signal over UART and it sometimes has limited bandwidth, especially if the text is large. Why it is best not to print for time senesative tasks.
+
+4. I think decompisiton is useful because it can make you more organized and help you to debug better by helping to reduce the amount of variables you have. Having local variables can help avoid having global variables, and it helps to keep the code organized. A small example of this was my append_formatted which helped me to do tasks and keep a minial amount of variables. 
